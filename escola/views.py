@@ -14,6 +14,8 @@ class AlunosViewSet(viewsets.ModelViewSet):
         else:
             return AlunoSerializer
 
+    http_method_names = ['get', 'post', 'put', 'path']
+
 
 class CursosViewSet(viewsets.ModelViewSet):
     """Exibindo todos os cursos"""
